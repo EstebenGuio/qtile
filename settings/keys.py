@@ -63,6 +63,12 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Visual Studio Code
     ([mod], "c", lazy.spawn("code")),
 
+    # IntellijIdea
+    ([mod], "i", lazy.spawn("sh /home/esteben/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8214.52/bin/idea.sh")),
+
+    # JetBrains - Toolbox -- Custom command created at ~./bin  folder
+    ([mod], "t", lazy.spawn("toolbox")),
+
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
 
