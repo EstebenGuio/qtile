@@ -63,8 +63,23 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Visual Studio Code
     ([mod], "c", lazy.spawn("code")),
 
+    # Visual Teams
+    #([mod], "t", lazy.spawn("teams")),
+    #([mod], "t", lazy.spawn("teams")),
+
+    # Blazedpath
+    # ([mod, "shift"], "b", lazy.spawn("/home/esteben/.bin/blaze")),
+    # ([mod, "shift"], "b", lazy.spawn("cd /home/esteben/Documents/beesion/blazedpath/blazedpath && ./blz &")), #/home/esteben/.bin
+    ([mod, "shift"], "b", lazy.spawncmd("cd /home/esteben/Documents/beesion/blazedpath/blazedpath && ./blz &")),
+    
+
     # IntellijIdea
     ([mod], "i", lazy.spawn("sh /home/esteben/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8214.52/bin/idea.sh")),
+    # DataGrip
+    ([mod], "d", lazy.spawn("sh /home/esteben/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/223.8214.62/bin/datagrip.sh")),
+    # Webstorm
+    ([mod, "shift"], "w", lazy.spawn("sh /home/esteben/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/bin/webstorm.sh")),
+
 
     # JetBrains - Toolbox -- Custom command created at ~./bin  folder
     ([mod], "t", lazy.spawn("toolbox")),
