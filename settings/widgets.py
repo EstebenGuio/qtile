@@ -89,6 +89,7 @@ primary_widgets = [
         full_char=' ',
         empty_char=' ',
         unknown_char=' ',
+        format='{char} {percent:2.0%}',
         background=colors['color4'],
         foreground=colors['text'],
         update_interval=60,
